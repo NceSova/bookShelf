@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <dialog>
+      <form onsubmit="event.preventDefault();">
+        <h1>Добавить новую книгу</h1>
+        <input type="text" id="title" placeholder="Название" />
+        <input type="text" id="author" placeholder="Автор" />
+        <input type="number" id="pages" placeholder="Кол-во страниц" />
+        <div>
+          Прочитана?
+          <input type="checkbox" id="read" />
+        </div>
+        <button type="submit" class="submit">Добавить</button>
+      </form>
+    </dialog>
+    <div class="books-container"></div>
+    <div class="menu">
+      <button>Добавить книгу</button>
+    </div>
+  </body>
+</html>
