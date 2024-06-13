@@ -1,3 +1,7 @@
+body {
+  margin: 0px;
+}
+
 .menu {
   height: 64px;
   width: 100%;
@@ -17,7 +21,7 @@
   display: grid;
   gap: 16px;
   margin-bottom: 68px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .books-container > div {
@@ -28,8 +32,9 @@
   border-radius: 4px;
   align-items: center;
   justify-self: center;
-  height: 300px;
-  width: 200px;
+  aspect-ratio: 2/3;
+  height: auto;
+  width: 150px;
   h3 {
     text-align: center;
   }
